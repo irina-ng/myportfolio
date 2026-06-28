@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TransLink Interactive Map — Irina Ng</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="site-header">
+  <a href="index.html" class="site-name">Irina Ng</a>
+  <nav class="main-nav" aria-label="Primary">
+    <a href="index.html#projects" aria-current="page">Projects</a>
+    <a href="about.html">About</a>
+    <a href="index.html#resume">Resume</a>
+  </nav>
+</header>
+
+<div class="project-hero">
+  <img src="assets/images/translink-hero.jpg" alt="Interactive Zone Map sign above the Compass vending machine">
+</div>
+
+<main class="project-page" id="main-content">
+
+  <section class="project-section">
+    <h1 class="project-title">TransLink Interactive Map</h1>
+  </section>
+
+  <section class="project-section row">
+    <p class="row-label">Project Overview</p>
+    <p class="row-body">
+      Reimagining the existing map on TransLink's SkyTrain ticket machines to
+      reduce confusion about the SkyTrain's zone-based fare system amongst new
+      and inexperienced riders.
+    </p>
+  </section>
+
+  <section class="project-section row">
+    <p class="row-label">Project Context</p>
+    <div class="row-body meta-list">
+      <div class="meta-item">
+        <p class="meta-label">Year</p>
+        <p>2024 – 12 Weeks</p>
+      </div>
+      <div class="meta-item">
+        <p class="meta-label">Course</p>
+        <p>Interaction Design – IAT 333</p>
+      </div>
+      <div class="meta-item">
+        <p class="meta-label">My Role</p>
+        <p>UI Design, UX Design, Researcher</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section row">
+    <div class="row-label-group">
+      <p class="row-label">Process</p>
+      <h2 class="row-heading">Ethnography Study</h2>
+    </div>
+    <div class="row-body">
+      <p>
+        On-site observation, interviews and photographs were conducted to gather
+        insights into the pain points and positive experiences around the fare
+        zones. Overall, the main concern was that many tourists and skytrain
+        employees receive comments how on weekends they are confused about what
+        fares to get.
+      </p>
+
+      <div class="people-icons">
+        <img src="assets/images/translink-people-icons.png" alt="12 SkyTrain users and 3 TransLink employees represented as icons" class="people-icons-img">
+      </div>
+
+      <div class="observation-map">
+        <img src="assets/images/translink-observation-map.png" alt="Observation and interview map showing Metrotown, Surrey Central, King George, Scott Road, and Inlet Centre stations" class="observation-map-img">
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section row">
+    <div class="row-label-group">
+      <p class="row-label">Process</p>
+      <h2 class="row-heading">Design Direction</h2>
+    </div>
+    <div class="row-body">
+      <p>
+        Through our ethnographic research, we kept noticing the same pattern in
+        which new riders who gravitated toward the map mounted above the
+        machine, using it to orient themselves before buying a ticket. Other
+        riders glanced at it too, but new riders were clearly its primary
+        audience.
+      </p>
+      <figure class="project-figure">
+        <img src="assets/images/translink-whiteboard.jpg" alt="Team brainstorming session on a whiteboard">
+        <figcaption>Team Brainstorming Session</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="project-section row">
+    <div class="row-label-group">
+      <p class="row-label">The Outcome</p>
+      <h2 class="row-heading">Old with the New</h2>
+    </div>
+    <div class="row-body">
+      <p>
+        From the original map, the differenciate between the zones aren't
+        clearly indicated for new riders. With the distinct colour associate
+        with each zone allows to easily read what zone ticket needed for their
+        trip during any time of day.
+      </p>
+      <div class="map-compare">
+        <img src="assets/images/translink-map-old.png" alt="Original SkyTrain zone map">
+        <img src="assets/images/translink-map-new.png" alt="Redesigned SkyTrain zone map">
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+  const header = document.querySelector('.site-header');
+  const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
+  document.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
+
+</body>
+</html>

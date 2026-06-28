@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Irina Ng</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="site-header">
+  <nav class="main-nav" aria-label="Primary">
+    <a href="index.html#projects">Projects</a>
+    <a href="about.html" aria-current="page">About</a>
+    <a href="index.html#resume">Resume</a>
+  </nav>
+</header>
+
+<main id="main-content" class="about-page">
+
+  <section class="about-intro">
+    <div class="about-photo">
+      <img src="assets/images/about-profile.png" alt="Portrait of Irina Ng wearing glasses and headphones">
+    </div>
+    <div class="about-text">
+      <p class="row-label">About Me</p>
+      <h1>Hi There! It's Irina Ng</h1>
+      <p>
+        In my fourth-year student at Simon Fraser University studying
+        Interactive Arts and Technology.
+      </p>
+      <p>
+        I have a passion on <span class="highlight">how things works</span> and
+        <span class="highlight">how people interact in their day-to-day lives
+        for convenience</span> and believe that is the core of UX/UI design. As
+        my "organized mess" personality leads my creativity, helping me design
+        spaces that feel personal, functional, and meaningful for others. The
+        scope of the work I do in projects is highly rewarding and visual which
+        definitely helps my motivation of doing great work.
+      </p>
+      <p>
+        You can catch me playing a late night game of League of Legends, or
+        binging Netflix.
+      </p>
+    </div>
+  </section>
+
+  <section class="about-snapshots">
+    <p class="row-label">Insider Photos</p>
+    <h2>My Snapshots</h2>
+
+    <div class="snapshot-grid">
+      <div class="snapshot tall">
+        <img src="assets/images/about-snap-neon-sign.png" alt="Glowing neon sign reading Take Eat Easy, Taste of Hong Kong">
+      </div>
+      <div class="snapshot wide">
+        <img src="assets/images/about-snap-mural.png" alt="Irina standing in front of a colourful graffiti wall">
+      </div>
+      <div class="snapshot">
+        <img src="assets/images/about-snap-figurine.png" alt="Small green figurine on a stone ledge with mountains in the background">
+      </div>
+      <div class="snapshot">
+        <img src="assets/images/about-snap-sunset.png" alt="Sunset over a river seen from a SkyTrain platform">
+      </div>
+      <div class="snapshot">
+        <img src="assets/images/about-snap-osaka.png" alt="Person looking up at neon billboards including the Glico running man sign in Osaka">
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+  const header = document.querySelector('.site-header');
+  const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
+  document.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
+
+</body>
+</html>

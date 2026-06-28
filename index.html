@@ -11,15 +11,17 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main-content">Skip to content</a>
+
 <header class="site-header">
-  <nav class="main-nav">
-    <a href="#projects">Projects</a>
-    <a href="#about">About</a>
+  <nav class="main-nav" aria-label="Primary">
+    <a href="#projects" aria-current="page">Projects</a>
+    <a href="about.html">About</a>
     <a href="#resume">Resume</a>
   </nav>
 </header>
 
-<main>
+<main id="main-content">
   <section class="hero">
     <p class="hero-greeting">Hey there, I'm Irina Ng!</p>
     <h1 class="hero-title">
@@ -43,7 +45,7 @@
           machines to reduce confusion about the SkyTrain's zone-based
           fare system amongst new and inexperienced riders.
         </p>
-        <a href="#" class="btn">View Project →</a>
+        <a href="translink-interactive-map.html" class="btn">View Project →</a>
       </div>
     </article>
 
@@ -64,6 +66,13 @@
     </article>
   </section>
 </main>
+
+<script>
+  const header = document.querySelector('.site-header');
+  const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
+  document.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
 
 </body>
 </html>

@@ -1,0 +1,153 @@
+.site-header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.project-hero {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  background: #000;
+}
+
+.project-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0.95;
+}
+
+.project-page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 60px 120px;
+}
+
+.project-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 56px 0 64px;
+}
+
+.project-section.row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 64px;
+}
+
+.project-section.row:last-child {
+  border-bottom: none;
+}
+
+.row-label,
+.meta-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: none;
+}
+
+.row-label-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.row-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.row-body {
+  font-size: 1rem;
+  max-width: 620px;
+}
+
+.meta-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.meta-item p:last-child {
+  margin-top: 2px;
+}
+
+/* People icons */
+.people-icons {
+  margin: 36px 0;
+}
+
+.people-icons-img {
+  display: block;
+  max-width: 480px;
+  width: 100%;
+  height: auto;
+}
+
+/* Observation map */
+.observation-map {
+  margin: 36px 0;
+}
+
+.observation-map-img {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+/* Figures */
+.project-figure {
+  margin-top: 28px;
+  max-width: 420px;
+}
+
+.project-figure img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+.project-figure figcaption {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+.map-compare {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 28px;
+  max-width: 500px;
+}
+
+.map-compare img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .project-page {
+    padding: 0 24px 80px;
+  }
+
+  .project-section.row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .project-hero {
+    height: 220px;
+  }
+}
