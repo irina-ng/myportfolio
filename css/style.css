@@ -1,0 +1,186 @@
+@font-face {
+  font-family: 'Basis Grotesque Arabic Pro';
+  src: url('../assets/fonts/BasisGrotesqueArabicPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Basis Grotesque Arabic Pro';
+  src: url('../assets/fonts/BasisGrotesqueArabicPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Basis Grotesque Arabic Pro';
+  src: url('../assets/fonts/BasisGrotesqueArabicPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --highlight: #9fe9e3;
+  --black: #111111;
+  --text-muted: #444444;
+  --max-width: 1140px;
+  --font-main: 'Basis Grotesque Arabic Pro', 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--black);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 28px 60px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 32px;
+  font-size: 0.95rem;
+}
+
+.main-nav a {
+  transition: opacity 0.2s ease;
+}
+
+.main-nav a:hover {
+  opacity: 0.6;
+}
+
+/* Hero */
+.hero {
+  max-width: 760px;
+  margin: 40px auto 100px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-greeting {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+.hero-title {
+  font-family: var(--font-main);
+  font-weight: 500;
+  font-size: 1.9rem;
+  line-height: 1.45;
+  margin-bottom: 32px;
+}
+
+.highlight {
+  background-color: var(--highlight);
+  font-weight: 700;
+  padding: 0 4px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--black);
+  color: #fff;
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 12px 28px;
+  border-radius: 8px;
+}
+
+/* Projects */
+.projects {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 60px 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.project-image {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.project-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-image.portrait {
+  max-width: 400px;
+}
+
+.project-info h2 {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.project-tag {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+.project-desc {
+  font-size: 1rem;
+  color: var(--black);
+  max-width: 480px;
+  margin-bottom: 24px;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .site-header {
+    padding: 20px 24px;
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .project {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .project-image,
+  .project-image.portrait {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .project-desc {
+    margin: 0 auto 24px;
+  }
+}
