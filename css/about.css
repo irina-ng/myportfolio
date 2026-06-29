@@ -43,6 +43,57 @@
   padding: 0 2px;
 }
 
+/* Connect */
+.connect {
+  margin-top: 28px;
+}
+
+.connect-label {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.connect-icons {
+  display: flex;
+  gap: 14px;
+}
+
+.connect-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--black);
+  color: #fff;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.connect-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.connect-icon:hover,
+.connect-icon:focus-visible {
+  background-color: var(--highlight);
+  color: var(--black);
+  transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .connect-icon {
+    transition: none;
+  }
+}
+
 /* Snapshots */
 .about-snapshots h2 {
   font-size: 1.6rem;

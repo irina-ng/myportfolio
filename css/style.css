@@ -19,12 +19,27 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'GT Pressura';
+  src: url('../assets/fonts/GT-Pressura-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Pressura';
+  src: url('../assets/fonts/GT-Pressura-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
   --highlight: #9fe9e3;
   --black: #111111;
   --text-muted: #444444;
   --max-width: 1140px;
   --font-main: 'Basis Grotesque Arabic Pro', 'Inter', sans-serif;
+  --font-caption: 'GT Pressura', 'Inter', sans-serif;
 }
 
 * {

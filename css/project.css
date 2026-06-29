@@ -115,6 +115,7 @@
   display: flex;
   gap: 24px;
   margin-top: 10px;
+  font-family: var(--font-caption);
   font-size: 0.85rem;
   color: var(--text-muted);
 }
@@ -160,6 +161,7 @@
 }
 
 .project-figure figcaption {
+  font-family: var(--font-caption);
   font-size: 0.8rem;
   color: var(--text-muted);
   margin-top: 8px;
@@ -184,6 +186,7 @@
 }
 
 .map-compare figcaption {
+  font-family: var(--font-caption);
   font-size: 0.8rem;
   color: var(--text-muted);
   margin-top: 8px;
@@ -264,6 +267,7 @@
 }
 
 .research-photos figcaption {
+  font-family: var(--font-caption);
   font-size: 0.8rem;
   color: var(--text-muted);
   margin-top: 8px;
