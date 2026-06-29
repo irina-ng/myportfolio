@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
 
@@ -17,7 +18,7 @@
   <nav class="main-nav" aria-label="Primary">
     <a href="#projects" aria-current="page">Projects</a>
     <a href="about.html">About</a>
-    <a href="#resume">Resume</a>
+    <a href="assets/files/Irina-Ng-Resume.pdf" target="_blank" rel="noopener">Resume</a>
   </nav>
 </header>
 
@@ -29,7 +30,6 @@
       in interaction design based on research with a
       passion for making everyday task accessible.
     </h1>
-    <a href="#projects" class="btn">Projects</a>
   </section>
 
   <section id="projects" class="projects">
@@ -51,21 +51,46 @@
 
     <article class="project">
       <div class="project-image portrait">
-        <img src="assets/images/bc-healthcare-app.png" alt="BC Healthcare App MSP screen on a phone mockup">
+        <img src="assets/images/miro-interface.png" alt="Miro whiteboard interface with a customizable sticky note toolbar">
       </div>
       <div class="project-info">
-        <h2>BC Healthcare App</h2>
-        <p class="project-tag">Interface Design (IAT 334)</p>
+        <h2>Miro Adapatable Interface</h2>
+        <p class="project-tag">1st Place Pathway One – SparkJam Hackathon</p>
         <p class="project-desc">
-          British Columbia's new mobile app lets international students
-          and BC residents quickly access healthcare information and
-          apply for the Medical Services Plan (MSP).
+          A collection of new, customizable Miro features to assist blind
+          and visually impaired individuals using screen readers to
+          navigate and contribute to collaborative digital whiteboards.
         </p>
-        <a href="#" class="btn">View Project →</a>
+        <a href="miro-adaptive-interface.html" class="btn">View Project →</a>
       </div>
     </article>
   </section>
 </main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Navigate</h3>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="assets/files/Irina-Ng-Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Follow</h3>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/irina-ng/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="mailto:ina16@sfu.ca">ina16@sfu.ca</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
 
 <script>
   const header = document.querySelector('.site-header');

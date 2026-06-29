@@ -137,6 +137,113 @@
   display: block;
 }
 
+/* Miro hero */
+.miro-hero {
+  background-color: #f7d92e;
+}
+
+.miro-hero img {
+  object-fit: contain;
+  background-color: #f7d92e;
+}
+
+/* Research photos */
+.research-photos {
+  display: flex;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.research-photos figure {
+  flex: 1;
+  max-width: 240px;
+}
+
+.research-photos img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+.research-photos figcaption {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+/* Design question + quote */
+.design-question {
+  background-color: var(--highlight);
+  font-weight: 700;
+  padding: 14px 18px;
+  border-radius: 4px;
+  max-width: 560px;
+  margin: 20px 0;
+}
+
+.research-quote {
+  border-left: 3px solid var(--black);
+  padding-left: 20px;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+.research-quote p {
+  margin-bottom: 8px;
+}
+
+.research-quote cite {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: normal;
+}
+
+/* Design concept grid */
+.concept-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 28px;
+  max-width: 620px;
+}
+
+.concept-card {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.concept-card--selected {
+  border: 2px solid #f7d92e;
+}
+
+.concept-card img {
+  width: 100%;
+  display: block;
+}
+
+/* Outcome */
+.outcome-image {
+  margin: 28px 0;
+  max-width: 560px;
+}
+
+.outcome-image img,
+.outcome-image video {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+.outcome-list {
+  padding-left: 20px;
+  max-width: 560px;
+}
+
+.outcome-list li {
+  margin-bottom: 12px;
+}
+
 @media (max-width: 800px) {
   .project-page {
     padding: 0 24px 80px;
@@ -149,5 +256,17 @@
 
   .project-hero {
     height: 220px;
+  }
+
+  .research-photos {
+    flex-direction: column;
+  }
+
+  .research-photos figure {
+    max-width: 100%;
+  }
+
+  .concept-grid {
+    grid-template-columns: 1fr;
   }
 }

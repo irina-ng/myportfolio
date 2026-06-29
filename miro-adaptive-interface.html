@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miro Adaptive Interface — Irina Ng</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/project.css">
+<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="site-header">
+  <a href="index.html" class="site-name">Irina Ng</a>
+  <nav class="main-nav" aria-label="Primary">
+    <a href="index.html#projects" aria-current="page">Projects</a>
+    <a href="about.html">About</a>
+    <a href="assets/files/Irina-Ng-Resume.pdf" target="_blank" rel="noopener">Resume</a>
+  </nav>
+</header>
+
+<div class="project-hero miro-hero">
+  <img src="assets/images/miro-hero.png" alt="Miro accessibility settings screen for customizing your toolbar">
+</div>
+
+<main class="project-page" id="main-content">
+
+  <section class="project-section">
+    <h1 class="project-title">Miro Adaptive Interface</h1>
+  </section>
+
+  <section class="project-section row">
+    <p class="row-label">Project Overview</p>
+    <p class="row-body">
+      A collection of new, customizable Miro features to assist blind and
+      visually impaired individuals using screen readers to navigate and
+      contribute to collaborative digital whiteboards.
+    </p>
+  </section>
+
+  <section class="project-section row">
+    <p class="row-label">Project Context</p>
+    <div class="row-body meta-list">
+      <div class="meta-item">
+        <p class="meta-label">Year</p>
+        <p>2026 – 5.5 Days</p>
+      </div>
+      <div class="meta-item">
+        <p class="meta-label">Context</p>
+        <p>SFU Surge – SparkJam Hackathon</p>
+      </div>
+      <div class="meta-item">
+        <p class="meta-label">My Role</p>
+        <p>UI Design, UX Design, Researcher</p>
+      </div>
+      <div class="meta-item">
+        <p class="meta-label">Mission</p>
+        <p>Change a creation tool to be used by a different audience. For example, making Photoshop beginner friendly.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section row">
+    <div class="row-label-group">
+      <p class="row-label">Process</p>
+      <h2 class="row-heading">Two rounds of research sharpened our focus</h2>
+    </div>
+    <div class="row-body">
+      <p>
+        We combined secondary research (academic studies, accessibility
+        guidelines) with a primary simulation exercise by using Miro with a
+        screen reader under simulated low vision and blindness conditions.
+      </p>
+
+      <div class="research-photos">
+        <figure>
+          <img src="assets/images/miro-research-lowvision.png" alt="Screen viewed through simulated low vision goggles">
+          <figcaption>Low vision (removed eyeglasses)</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/miro-research-blindness.png" alt="Monitor covered with a blanket to simulate total blindness">
+          <figcaption>Total blindness (covered monitor with blanket)</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section row">
+    <div class="row-label-group">
+      <p class="row-label">Process</p>
+      <h2 class="row-heading">Design Question</h2>
+    </div>
+    <div class="row-body">
+      <p>
+        We refined our original "how might we" question — shifting from
+        navigation to creation, and grounding it in a specific user persona:
+        Linda, a backend developer who struggles to contribute to her team's
+        virtual scrum sessions in Miro.
+      </p>
+      <p class="design-question">
+        How might we make the Miro creation process more adaptable and
+        structured for first-time blind and low vision users?
+      </p>
+      <blockquote class="research-quote">
+        <p>
+          Being able to choose the information felt really important and
+          meaningful…it would save time not having to listen to information
+          I didn't need or care about.
+        </p>
+        <cite>—Research Study Blind Participant</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="project-section row">
+    <div class="row-label-group">
+      <p class="row-label">Process</p>
+      <h2 class="row-heading">Design Concept</h2>
+    </div>
+    <div class="row-body">
+      <p>
+        After evaluating three concepts: automatic labelling/grouping, a
+        customizable toolbar, and an external drawing tablet, the team
+        converged on a toolbar customization system as the highest-value,
+        most realistic path forward.
+      </p>
+
+      <div class="concept-grid">
+        <figure class="concept-card">
+          <img src="assets/images/miro-concept-labelling.png" alt="Automatic labelling, tagging, and grouping concept sketch">
+        </figure>
+        <figure class="concept-card concept-card--selected">
+          <img src="assets/images/miro-concept-toolbar.png" alt="Customizable toolbar concept sketch">
+        </figure>
+        <figure class="concept-card">
+          <img src="assets/images/miro-concept-tablet.png" alt="External drawing tablet concept sketch">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section row">
+    <div class="row-label-group">
+      <p class="row-label">The Outcome</p>
+    </div>
+    <div class="row-body">
+      <p>
+        Users choose from a simple toolbar (6 screen-reader-optimized tools),
+        the default Miro toolbar, or a fully custom arrangement. Selected on
+        first launch via a dedicated accessibility setup flow.
+      </p>
+
+      <div class="outcome-image">
+        <video controls playsinline preload="metadata">
+          <source src="assets/videos/miro-prototype-walkthrough.mp4" type="video/mp4">
+          Your browser doesn't support embedded video. <a href="assets/videos/miro-prototype-walkthrough.mp4">Download the prototype walkthrough</a> instead.
+        </video>
+      </div>
+
+      <ol class="outcome-list">
+        <li>Guided first-launch setup: dedicated accessibility settings flow helps BLV users choose and configure their toolbar before they start.</li>
+        <li>Customization &amp; control over what your default actions you have available on the toolbars in Miro.</li>
+        <li>Keyboard-first customization — tools can be added, removed, and reordered entirely by keyboard, with clear shortcut instructions in the UI.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="project-section row">
+    <div class="row-label-group">
+      <p class="row-label">Showcase</p>
+      <h2 class="row-heading">Presenting at SparkJam</h2>
+    </div>
+    <div class="row-body">
+      <figure class="project-figure">
+        <img src="assets/images/miro-hackathon-demo.jpg" alt="Miro Adaptable Interfaces poster and laptop demo set up at the SFU Surge SparkJam Hackathon">
+        <figcaption>Our demo setup at SFU Surge SparkJam Hackathon</figcaption>
+      </figure>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Navigate</h3>
+      <ul>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="assets/files/Irina-Ng-Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Follow</h3>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/irina-ng/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="mailto:ina16@sfu.ca">ina16@sfu.ca</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const header = document.querySelector('.site-header');
+  const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
+  document.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
+
+</body>
+</html>
