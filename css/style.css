@@ -138,14 +138,58 @@ a {
 
 /* Hero */
 .hero {
-  max-width: 760px;
+  position: relative;
+  width: 60%;
+  max-width: 1000px;
   margin: 40px auto 100px;
   text-align: center;
   padding: 0 20px;
 }
 
+.hero-icon {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: var(--black);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.55;
+}
+
+.hero-icon--cursor {
+  top: -10px;
+  left: 0;
+  transform: rotate(-12deg);
+  fill: var(--highlight);
+  stroke: var(--black);
+}
+
+.hero-icon--search {
+  top: 30px;
+  right: -10px;
+}
+
+.hero-icon--access {
+  bottom: 20px;
+  left: -30px;
+}
+
+.hero-icon--spark {
+  bottom: -20px;
+  right: 30px;
+  stroke: #2f9e94;
+}
+
+@media (max-width: 800px) {
+  .hero-icon {
+    display: none;
+  }
+}
+
 .hero-greeting {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--text-muted);
   margin-bottom: 18px;
 }
@@ -153,8 +197,8 @@ a {
 .hero-title {
   font-family: var(--font-main);
   font-weight: 500;
-  font-size: 1.9rem;
-  line-height: 1.45;
+  font-size: 2.6rem;
+  line-height: 1.4;
   margin-bottom: 32px;
 }
 
@@ -252,6 +296,10 @@ a {
   .site-header {
     padding: 20px 24px;
     justify-content: center;
+  }
+
+  .hero {
+    width: 100%;
   }
 
   .hero-title {
